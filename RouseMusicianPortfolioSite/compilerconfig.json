@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/scss/_mixins.css",
+    "inputFile": "wwwroot/css/scss/_mixins.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/scss/grayscale.css",
+    "inputFile": "wwwroot/css/scss/grayscale.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/scss/_navbar.css",
+    "inputFile": "wwwroot/css/scss/_navbar.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/_about.css",
+    "inputFile": "wwwroot/scss/_about.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/_buttons.css",
+    "inputFile": "wwwroot/scss/_buttons.scss"
+  }
+]
