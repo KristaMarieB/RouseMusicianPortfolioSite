@@ -2,9 +2,29 @@
     height: 370px;
 }
 
+#about {
+    font-family: 'Nunito';
+}
+
+#signup {
+    font-family: 'Nunito';
+}
+
+#footer {
+    font-family: 'Nunito';
+}
+
 .nav-item {
     font-family: 'Nunito';
 }
+
 .navbar-brand {
     font-family: 'Nunito';
 }
+
+button {
+    background-color: #64a19d !important;
+    border: none !important;
+}
+
+

@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <environment include="Development">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
@@ -54,9 +54,9 @@
     <header id="page-top" class="masthead">
         <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase">Dalton Rouse Music</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Content Coming Soon</h2>
-                <a href="#about" class="btn btn-primary js-scroll-trigger">Bio</a>
+                <h1 class="mx-auto my-0">Dalton Rouse Music</h1> <!-- took away text-uppercase -->
+                <h2 class="text-white-50 mx-auto mt-2 mb-5" id="bio">Content Coming Soon</h2>
+                <button href="#about" class="btn btn-dark js-scroll-trigger">Bio</button>
             </div>
         </div>
     </header>
@@ -72,7 +72,7 @@
                     </p>
                 </div>
             </div>
-            <img src="~/stock-img/bw-soundboard2-smaller.jpg" class="img-fluid" alt=""> <!-- PNG image with transparent background!!! -->
+            <img src="~/img/ipad.png" class="img-fluid" alt=""> <!-- PNG image with transparent background!!! -->
         </div>
     </section>
 
@@ -88,7 +88,7 @@
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
                         <h4>5th and Roy (Live)</h4>
-                        <p class="text-black-50 mb-0">Song description</p>
+                        <p class="text-black-50 mb-0">Song description</p> <br />
                         <p><iframe height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/520396668&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></p>
                     </div>
                 </div>
@@ -100,8 +100,7 @@
                     <img class="img-fluid" src="~/stock-img/bw-headphones-mic-3-2.jpg" alt="">
                 </div>
                 <div class="col-lg-6" id="blackBox">
-                    <div class="text-center h-100 project bg-black">
-                        <!-- Add bg-black if I want it back to the black panels -->
+                    <div class="text-center h-100 project bg-black"> <!-- Add bg-black if I want it back to the black panels -->
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h4 class="text-white text-center">All's Fair In Fame And Fortune</h4>
@@ -141,18 +140,18 @@
             <!-- Project Three Row -->
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="~/stock-img/bw-headphones-mic-3-2.jpg" alt="">
+                    <img class="img-fluid" src="~/stock-img/bw-soundboard2-3-2.jpg" alt="">
                 </div>
                 <div class="col-lg-6" id="blackBox">
                     <div class="text-center h-100 project bg-black">
                         <!-- Add bg-black if I want it back to the black panels -->
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white text-center">Song Title</h4>
+                                <h4 class="text-white text-center">Treasure (Electric Cover)</h4>
                                 <p class="mb-0 text-white-50 text-center">Song Description</p>
                                 <br />
                                 <div class="text-center">
-                                    <!-- SoundCloud Embedded Link goes here -->
+                                    <iframe height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/520397577&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                                 </div>
                                 <!-- <hr class="d-none d-lg-block mb-0 ml-0"> light teal line for decoration -->
                             </div>
@@ -175,7 +174,7 @@
 
                     <form class="form-inline d-flex">
                         <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-                        <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+                        <button type="submit" class="btn btn-dark mx-auto">Subscribe</button>
                     </form>
 
                 </div>
@@ -192,7 +191,7 @@
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <i class="fas fa-map-marked-alt text-primary mb-2 text-black-50"></i>
                             <h4 class="text-uppercase m-0">Location</h4>
                             <hr class="my-4">
                             <div class="small text-black-50">Seattle, WA</div>
@@ -203,11 +202,11 @@
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <i class="fas fa-envelope text-primary mb-2 text-black-50"></i>
                             <h4 class="text-uppercase m-0">Email</h4>
                             <hr class="my-4">
                             <div class="small text-black-50">
-                                <a href="#">ctcdalton@yahoo.com</a>
+                                <a href="">ctcdalton@yahoo.com</a>
                             </div>
                         </div>
                     </div>
@@ -216,7 +215,7 @@
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <i class="fas fa-mobile-alt text-primary mb-2 text-black-50"></i>
                             <h4 class="text-uppercase m-0">Phone</h4>
                             <hr class="my-4">
                             <div class="small text-black-50">+1 (555) 902-8832</div>
@@ -248,7 +247,7 @@
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
         @RenderBody()
-        <div class="container">
+        <div id="footer" class="container">
             Copyright &copy; Dalton Rouse Music @DateTime.Now.Year
         </div>
     </footer>
