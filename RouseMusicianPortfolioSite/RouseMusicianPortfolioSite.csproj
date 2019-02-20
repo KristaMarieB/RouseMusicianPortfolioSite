@@ -6,9 +6,17 @@
 
   <ItemGroup>
     <Compile Remove="wwwroot\lib\font-awesome\**" />
+    <Compile Remove="wwwroot\NewFolder1\**" />
+    <Compile Remove="wwwroot\NewFolder\**" />
     <Content Remove="wwwroot\lib\font-awesome\**" />
+    <Content Remove="wwwroot\NewFolder1\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
     <EmbeddedResource Remove="wwwroot\lib\font-awesome\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder1\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
     <None Remove="wwwroot\lib\font-awesome\**" />
+    <None Remove="wwwroot\NewFolder1\**" />
+    <None Remove="wwwroot\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
