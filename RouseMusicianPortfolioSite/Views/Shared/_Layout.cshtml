@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="~/StyleSheet.css" />
     <link rel="stylesheet" href="~/lib/startbootstrap-grayscale/css/grayscale.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     @* ---Fonts--- *@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -29,7 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Dalton Rouse </a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Dalton Rouse</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -55,8 +56,27 @@
         <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
                 <h1 class="mx-auto my-0">Dalton Rouse Music</h1> <!-- took away text-uppercase -->
-                <h2 class="text-white-50 mx-auto mt-2 mb-5" id="bio">Content Coming Soon</h2>
-                <button href="#about" class="btn btn-dark js-scroll-trigger">Bio</button>
+                <h5 class="text-white-50 mx-auto mt-2 mb-5" id="bio">Music Production, Studio Recording, Songwriting</h5>
+                <!--
+                    <div class="social d-flex justify-content-center" id="media">
+                    <a href="#" class="mx-4" target="_blank" rel="noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="mx-4" target="_blank" rel="noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="mx-4" target="_blank" rel="noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="mx-4" target="_blank" rel="noreferrer">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://soundcloud.com/dalton-rouse" class="mx-4" target="_blank" rel="noreferrer">
+                        <i class="fab fa-soundcloud"></i>
+                    </a>
+                </div><br />
+                -->
+                <a href="#about" class="btn btn-dark js-scroll-trigger">About</a>
             </div>
         </div>
     </header>
@@ -75,7 +95,7 @@
             <img src="~/img/ipad.png" class="img-fluid" alt=""> <!-- PNG image with transparent background!!! -->
         </div>
     </section>
-
+    <br />
     <!-- Songs Section Soundcloud links-->
     <section id="projects" class="projects-section bg-light">
         <div class="container">
@@ -100,7 +120,8 @@
                     <img class="img-fluid" src="~/stock-img/bw-headphones-mic-3-2.jpg" alt="">
                 </div>
                 <div class="col-lg-6" id="blackBox">
-                    <div class="text-center h-100 project bg-black"> <!-- Add bg-black if I want it back to the black panels -->
+                    <div class="text-center h-100 project bg-black">
+                        <!-- Add bg-black if I want it back to the black panels -->
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h4 class="text-white text-center">All's Fair In Fame And Fortune</h4>
@@ -126,11 +147,13 @@
                         <!-- Add bg-black if I want it back to the black panels -->
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white text-center">Torture</h4>
+                                <h4 class="text-white text-center">Blue Light</h4>
                                 <p class="mb-0 text-white-50 text-center">Song Description</p>
                                 <br />
-                                <p class="text-center"><iframe height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/520402410&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></p>
-                                <!-- <hr class="d-none d-lg-block mb-0 mr-0"> -->
+                                <div class="text-center">
+                                    <iframe height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/520393788&color=%2300aabb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                                    <!-- <hr class="d-none d-lg-block mb-0 mr-0"> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -224,29 +247,36 @@
                 </div>
             </div>
 
+            <!-- Social Media Section -->
+            <!-- Icons from Font Awesome -->
             <div class="social d-flex justify-content-center">
-                <!--
-                    <a href="#" class="mx-2">
-                    <i class="fab fa-twitter"></i>
-                    </a>
-                -->
-                <a href="https://www.facebook.com/ClearTheChaos/" class="mx-2">
+                <a href="#" class="mx-4">
+                    <i class="fab fa-twitter" target="_blank" rel="noreferrer"></i>
+                </a>
+                <a href="#" class="mx-4" target="_blank" rel="noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="mx-4" target="_blank" rel="noreferrer">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://soundcloud.com/dalton-rouse" class="mx-2">
+                <a href="#" class="mx-4" target="_blank" rel="noreferrer">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://soundcloud.com/dalton-rouse" class="mx-4" target="_blank" rel="noreferrer">
                     <i class="fab fa-soundcloud"></i>
                 </a>
             </div>
-
         </div>
     </section>
 
 
-    <partial name="_CookieConsentPartial" />
-
+    <!--
+        <partial name="_CookieConsentPartial" />
+    -->
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
         @RenderBody()
+
         <div id="footer" class="container">
             Copyright &copy; Dalton Rouse Music @DateTime.Now.Year
         </div>
@@ -274,7 +304,12 @@
     </environment>
 
     <script src="~/lib/jquery-easing/jquery.easing.min.js"></script>
-    <script src="~/lib/startbootstrap-grayscale/js/grayscale.min.js"></script>
+    <script src="~/lib/startbootstrap-grayscale/js/grayscale.js"></script>
+
+    <!-- Adding updated jquery links trying to fix collapsed nav issue -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     @RenderSection("Scripts", required: false)
 

@@ -23,8 +23,16 @@
 }
 
 button {
-    background-color: #64a19d !important;
+    /*
+background-color: #64a19d !important;
+    */
     border: none !important;
+}
+
+#media a, a:hover {
+    text-decoration: none !important;
+    color: black !important;
+
 }
 
 
