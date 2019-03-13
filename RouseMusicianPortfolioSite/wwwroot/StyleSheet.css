@@ -10,6 +10,11 @@
     font-family: 'Nunito';
 }
 
+#tealbtn {
+    background-color: #64a19d !important;
+    border: none !important;
+}
+
 #footer {
     font-family: 'Nunito';
 }
