@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace RouseMusicianPortfolioSite.Models
 {
-    public class Subscribe
+    public class Subscriber
     {
+        [Key]
         [Required]
         [EmailAddress]
         public string Email { get; set; }

@@ -4,12 +4,20 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using RouseMusicianPortfolioSite.Data;
 using RouseMusicianPortfolioSite.Models;
 
 namespace RouseMusicianPortfolioSite.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly SubscribeContext _context;
+
+        public HomeController(SubscribeContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -28,7 +36,17 @@ namespace RouseMusicianPortfolioSite.Controllers
 
         public IActionResult Contact()
         {
+            return View();
+        }
 
+        public async Task<IActionResult> Create([Bind("Email, Name")] Subscriber subscriber)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(subscriber);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
             return View();
         }
 

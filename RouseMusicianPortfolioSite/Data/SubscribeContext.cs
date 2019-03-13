@@ -8,11 +8,12 @@ namespace RouseMusicianPortfolioSite.Data
 {
     public class SubscribeContext : DbContext 
     {
-        public SubscribeContext(DbContextOptions<SubscribeContext> options) : base(options)
+        public SubscribeContext(DbContextOptions<SubscribeContext> options) 
+            : base(options)
         {
 
         }
 
-        public DbSet<RouseMusicianPortfolioSite.Models.Subscribe> Subscribe { get; set; }
+        public DbSet<RouseMusicianPortfolioSite.Models.Subscriber> Subscriber { get; set; }
     }
 }
