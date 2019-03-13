@@ -21,14 +21,14 @@ namespace RouseMusicianPortfolioSite.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Music()
         {
-
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Contact()
         {
+
             return View();
         }
 
