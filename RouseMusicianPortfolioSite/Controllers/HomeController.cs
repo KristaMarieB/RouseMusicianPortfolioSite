@@ -41,12 +41,14 @@ namespace RouseMusicianPortfolioSite.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Contact([Bind("Email, Name")] Subscriber subscriber)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(subscriber);
                 await _context.SaveChangesAsync();
+                ViewBag.Message = "Thanks for subscribing!";
                 return RedirectToAction(nameof(Index));
             }
             return View();
