@@ -13,8 +13,9 @@
                 return false;
             }
         }
-    });
+    }); 
 
+    // Currently collapses but leaves words up, doesn't fully collapse
     //// Closes responsive menu when a scroll trigger link is clicked
     //$('.js-scroll-trigger').click(function () {
     //    $('.navbar-collapse').collapse('hide');
@@ -37,10 +38,10 @@
         }
     };
    
-
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
+    // Doesn't work...
+    //// Collapse now if page is not at top
+    //navbarCollapse();
+    //// Collapse the navbar when page is scrolled
+    //$(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
