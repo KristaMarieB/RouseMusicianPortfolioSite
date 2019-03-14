@@ -41,7 +41,7 @@ namespace RouseMusicianPortfolioSite.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("Email, Name")] Subscriber subscriber)
+        public async Task<IActionResult> Contact([Bind("Email, Name")] Subscriber subscriber)
         {
             if (ModelState.IsValid)
             {

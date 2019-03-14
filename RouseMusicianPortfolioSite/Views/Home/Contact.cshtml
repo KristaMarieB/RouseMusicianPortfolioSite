@@ -18,15 +18,12 @@
                     <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Email">
                     <button type="submit" class="btn btn-dark mx-auto">Subscribe</button>
                 </form>*@
-                    @using (Html.BeginForm(FormMethod.Post, new {@class="form-inline d-flex"}))
+                    @using (Html.BeginForm(FormMethod.Post, new { @class="form-inline d-flex"}))
                     {
                         @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0", @placeholder = "Name" } })
                         @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0", @placeholder = "Name" } })
-                        <input type="submit" action="create" value="Subscribe" class="btn btn-dark mx-auto" />
+                        <input type="submit" value="Subscribe" class="btn btn-dark mx-auto" />
                     }
-
-                
-
             </div>
         </div>
     </div>
