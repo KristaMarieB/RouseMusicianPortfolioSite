@@ -34,11 +34,13 @@ namespace RouseMusicianPortfolioSite.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Contact()
         {
             return View();
         }
 
+        [HttpPost]
         public async Task<IActionResult> Create([Bind("Email, Name")] Subscriber subscriber)
         {
             if (ModelState.IsValid)
